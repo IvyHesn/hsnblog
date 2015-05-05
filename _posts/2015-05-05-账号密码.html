@@ -1,0 +1,54 @@
+---
+layout: default
+title: 账号密码
+categories:daily
+---
+<h2>{{ page.title }}</h2>
+<p>分类：{{ page.categories }}</p>
+<form action="/" method="post">
+	<input type="text" name="title" />
+	<input type="submit" value="搜索" />
+</form>
+<!--占位符&nbsp;-->
+<table border="0" cellpadding="10" cellspacing="10"  frame="below">
+	<caption>博客</caption>
+	<tr bgcolor="#BFFFDF">
+		<th align="middle">网站</th>
+		<th align="middle">账号</th>
+		<th align="middle">密码</th>
+		<th align="middle">昵称</th>
+		<th align="middle">备注</th>
+	</tr>
+	<tr>
+		<td>点点网</td>
+		<td>ivyhesn</td>
+		<td>n5</td>
+	</tr>
+	<tr>
+		<td>diandian</td>
+		<td>ivyhesn</td>
+		<td>n5</td>
+	</tr>
+</table>
+
+<table border="0" cellpadding="10" cellspacing="10"  frame="below">
+	<caption>游戏</caption>
+	<tr bgcolor="#BFFFDF">
+		<th align="middle">网站</th>
+		<th align="middle">账号</th>
+		<th align="middle">密码</th>
+		<th align="middle">昵称</th>
+		<th align="middle">备注</th>
+	</tr>
+	<tr>
+		<td>点点网</td>
+		<td>ivyhesn</td>
+		<td>n5</td>
+	</tr>
+	<tr>
+		<td>diandian</td>
+		<td>ivyhesn</td>
+		<td>n5</td>
+	</tr>
+</table>
+<p>{{ page.date | date_to_string }}</p>
