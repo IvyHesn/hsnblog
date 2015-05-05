@@ -1,11 +1,22 @@
 ---
 layout: default
-title: 你好，世界
+title: 账号密码
 ---
 <h2>{{ page.title }}</h2>
 <form action="/" method="post">
 	<input type="text" name="title" />
 	<input type="submit" value="搜索" />
 </form>
-<p>我的第一篇文章</p>
+<table border="1">
+	<tr>
+		<th>net</th>
+		<th>ID</th>
+		<th>Password</th>
+	</tr>
+	<tr>
+		<th>diandian</th>
+		<th>ivyhesn</th>
+		<th>n5</th>
+	</tr>
+</table>
 <p>{{ page.date | date_to_string }}</p>
