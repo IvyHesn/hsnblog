@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="gbk"?>
-<items>
-	<item id="001" name="joe" sex="male" age="23" job="developer"/>
-	<item id="002" name="bill" sex="male" age="30" job="manager"/>
-	<item id="003" name="white" sex="male" age="22" job="test"/>
-	<item id="004" name="jack" sex="male" age="40" job="boss"/>
-</items>
