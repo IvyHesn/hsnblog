@@ -4,6 +4,43 @@ title: nihao
 categories:hello
 ---
 <h2>{{ page.title }}</h2>
-<p>分类：{{ page.categories }}</p>
-<p>[lianjie]({{site.url}}/hsnblog/assets/123.txt)</p>
+<p>{{ page.categories }}</p>
+<table id="tab" border="1" align="center">
+	<tbody id="tbody">
+		<tr>
+			<td>ID</td>
+			<td>姓名</td>
+			<td>性别</td>
+			<td>年龄</td>
+			<td>职位</td>
+		</tr>
+
+	</tbody>
+</table>
+<script language="javascript">
+//创建xml dom对象,读取xml文件
+doc = new ActiveXObject("MSXML2.DOMDocument.3.0");
+doc.load("456.xml");
+//子元素
+var items = doc.documentElement.childNodes;
+var oTbody = document.all.tbody;
+//遍历子元素
+for(var i=0;i<items.length;i++){
+var item = items[i];
+var atts = item.attributes;
+//利用dhtml创建子元素
+var oRow = document.createElement("TR");
+for(var j=0;j<atts.length;j++){
+         oCell = document.createElement("TD");
+         oCell.innerText = atts[j].value;
+         oRow.appendChild(oCell);
+}
+oTbody.appendChild(oRow);
+
+//alert(item.attributes.length);
+
+}
+
+</script>
+
 <p>{{ page.date | date_to_string }}</p>
