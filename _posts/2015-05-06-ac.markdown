@@ -8,8 +8,36 @@
 
 网站    |       账号     |    密码   |    昵称   |    备注
 ----    |     ----       |    ----    |   ----    |   ----
-知乎    |hsnstudy@126.com|   n5      |      IvyHesn    |      1
-豆瓣    |nekonya@yeah.net|   n5      |      nekonya    |      1
+知乎    |hsnstudy@126.com|   n5*      |      IvyHesn    |      1
+豆瓣    |nekonya@yeah.net|   n5*      |      nekonya    |      1
+Iask爱问|	hsnspark@126.com|	o5*|	hsnspark|
+EverNote印象笔记|	hsnstudy@126.com|	n5*|	IvyHe611|	印象笔记邮箱:ivyhe611.2f0a927@m.yinxiang.com
+当当网	|nekonya@yeah.net|	n5*		|
+sina博客|	hsnstudy@126.com|	n5*|	IvyHe	
+sina微博|	hsnstudy@126.com|	n5*	|IvyHesn|	绑定了taobao账号nekonya
+sina微博|	hsnspark@126.com|	o5*	|工口可奈子	
+3DMGAME	|IvyHe|	n5*	|IvyHe	|邮箱 hsnstudy@126.com
+Adobe ID|	nekonya@yeah.net|	n5*|	IvyHe	
+115网盘|	nekonya@yeah.net|	n5*|		
+CSDN|	hsnstudy@126.com|	n5*|	IvyHesn	
+花瓣网|	1021308167@qq.com	|n5*	|	|QQ登录
+花瓣网	hsnstudy@126.com|	n5*|	IvyHesn	
+站酷|	hsnstudy@126.com|	n5*|	IvyHesn	
+baidu|	1021308167@qq.com/15172377606	|o5*|	碎星Ivy	
+WebPPD|	nekonya	|n5*	||	邮箱nekonya@yeah.net
+数字尾巴|	hsnstudy|	n5*	|	|邮箱hsnstudy@126.com
+csdn|	IvyHesn	|n5*|		|邮箱hsnstudy@126.com
+GITHUB|	hsnstudy@126.com	|n5*|	IvyHesn	|
+智联招聘|	hesinan@163.com	|n5*		
+webppd	|hsnaxure|	n5*	|	|邮箱1021308167@qq.com
+网易云课堂|	nekonya@yeah.net|	n5*	|nekonya	
+模拟器genymotion|	nekonya@yeah.net|	147369|	nekonya	
+Adobe|	nekonya@yeah.net	|n5*	|	
+雪球|	hsnstudy@126.com	|n5*	|IvyHesn	
+foxit cloud|	hsnstudy@126.com	|n5*|		
+快盘|	hsnstudy@126.com	|n5*|		
+简书|	hsnstudy@126.com	|n5*|		
+JD云|	nekonyapii	|	|nekonyapii	| 邮箱nekonya@yeah.net 手机13521892169
 
 
 
