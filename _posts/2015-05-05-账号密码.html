@@ -3,6 +3,30 @@ layout: default
 title: 账号密码
 categories:daily
 ---
+<head><style type="text/css">
+table.imagetable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+table.imagetable th {
+	background:#b5cfd2 url('cell-blue.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+table.imagetable td {
+	background:#dcddc0 url('cell-grey.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+</style></head>
 <h2>{{ page.title }}</h2>
 <p>分类：{{ page.categories }}</p>
 <form action="/" method="post">
@@ -10,7 +34,7 @@ categories:daily
 	<input type="submit" value="搜索" />
 </form>
 <!--占位符&nbsp;-->
-<table border="0" cellpadding="10" cellspacing="10"  frame="box" rules="all">
+<table class="imagetable">
 	<caption>学习</caption>
 	<tr bgcolor="#BFFFDF">
 		<th align="middle">网站</th>
@@ -246,7 +270,7 @@ categories:daily
 </table>
 <br/>
 
-<table border="0" cellpadding="10" cellspacing="10"  frame="below">
+<table class="imagetable">
 	<caption>生活</caption>
 	<thead>
 		<tr bgcolor="#BFFFDF">
@@ -411,7 +435,7 @@ categories:daily
 
 <div class="md-section-divider"></div>
 
-<table border="0" cellpadding="10" cellspacing="10"  frame="below">
+<table class="imagetable">
 	<caption>游戏</caption>
 	<thead>
 		<tr bgcolor="#BFFFDF">
@@ -532,8 +556,8 @@ categories:daily
 </table>
 <br/>
 
-<div class="md-section-divider"></div>
-<table border="0" cellpadding="10" cellspacing="10"  frame="below">
+
+<table class="imagetable">
 	<caption>邮箱</caption>
 	<thead>
 		<tr bgcolor="#BFFFDF">
