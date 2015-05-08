@@ -1,43 +1,79 @@
 ---
-layout: default
-title: 账号密码
+layout:default
+title:账号密码
 categories:daily
 ---
 <head>
 <style type="text/css">
 table.imagetable {
-	font-family: verdana,arial,sans-serif;
-	font-size:11px;
-	color:#333333;
+	font-family: verdana, arial, sans-serif;
+	font-size: 11px;
+	color: #333333;
 	border-width: 1px;
 	border-color: #999999;
 	border-collapse: collapse;
 }
 table.imagetable th {
-	background:#b5cfd2 url('cell-blue.jpg');
+	background: #b5cfd2 url('cell-blue.jpg');
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
 	border-color: #999999;
-	font-size:20px;
+	font-size: 20px;
 }
 table.imagetable td {
-	background:#dcddc0 url('cell-grey.jpg');
+	background: #dcddc0 url('cell-grey.jpg');
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
 	border-color: #999999;
 }
 caption {
-	font-weight:bold;
-	font-size:30px;
+	font-weight: bold;
+	font-size: 30px;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+li {
+	float: left;
+}
+a:link, a:visited {
+	display: block;
+	width: 120px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #bebebe;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a:hover, a:active {
+	background-color: #cc0000;
 }
 </style>
 </head>
-<h2>{{ page.title }}</h2>
-<p>分类：{{ page.categories }}</p>
+<h2>
+	{
+	{
+		page.title
+	}
+}
+</h2>
+<p>
+	分类： {
+	{
+		page.categories
+	}
+}
+</p>
 
-<!--占位符&nbsp;-->
+<!--占位符&nbsp;
+-->
 <table class="imagetable">
 	<caption>学习</caption>
 	<tr bgcolor="#BFFFDF">
@@ -49,7 +85,7 @@ caption {
 	</tr>
 	<tr>
 		<td>
-			<a href="http://www.diandian.com/home" target="_blank">点点网</a>
+			<a href="http://www.diandian.com/home"target="_blank">点点网</a>
 		</td>
 		<td>ivyhesn</td>
 		<td>n5</td>
@@ -58,7 +94,7 @@ caption {
 	</tr>
 	<tr>
 		<td>
-			<a href="http://www.zhihu.com/" target="_blank">知乎</a>
+			<a href="http://www.zhihu.com/"target="_blank">知乎</a>
 		</td>
 		<td>hsnstudy@126.com</td>
 		<td>lovema***</td>
@@ -67,7 +103,7 @@ caption {
 	</tr>
 	<tr>
 		<td>
-			<a href="http://www.douban.com/" target="_blank">豆瓣</a>
+			<a href="http://www.douban.com/"target="_blank">豆瓣</a>
 		</td>
 		<td>nekonya@yeah.net</td>
 		<td>n5</td>
@@ -849,4 +885,10 @@ caption {
 </table>
 <br/>
 
-<p>{{ page.date | date_to_string }}</p>
+<p>
+	{
+	{
+		page.date | date_to_string
+	}
+}
+</p>
