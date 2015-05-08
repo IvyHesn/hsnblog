@@ -1,6 +1,7 @@
 ---
-layout:default
-title:账号密码
+layout: default
+title: 账号密码
+categories:daily
 ---
 <head>
 <style type="text/css">
@@ -33,7 +34,8 @@ caption {
 }
 </style>
 </head>
-<h2>{{page.title}}</h2>
+<h2>{{ page.title }}</h2>
+<p>分类：{{ page.categories }}</p>
 
 <!--占位符&nbsp;-->
 <table class="imagetable">
@@ -47,7 +49,7 @@ caption {
 	</tr>
 	<tr>
 		<td>
-			<a href="http://www.diandian.com/home"target="_blank">点点网</a>
+			<a href="http://www.diandian.com/home" target="_blank">点点网</a>
 		</td>
 		<td>ivyhesn</td>
 		<td>n5</td>
@@ -56,7 +58,7 @@ caption {
 	</tr>
 	<tr>
 		<td>
-			<a href="http://www.zhihu.com/"target="_blank">知乎</a>
+			<a href="http://www.zhihu.com/" target="_blank">知乎</a>
 		</td>
 		<td>hsnstudy@126.com</td>
 		<td>lovema***</td>
@@ -65,7 +67,7 @@ caption {
 	</tr>
 	<tr>
 		<td>
-			<a href="http://www.douban.com/"target="_blank">豆瓣</a>
+			<a href="http://www.douban.com/" target="_blank">豆瓣</a>
 		</td>
 		<td>nekonya@yeah.net</td>
 		<td>n5</td>
@@ -847,10 +849,4 @@ caption {
 </table>
 <br/>
 
-<p>
-	{
-	{
-		page.date | date_to_string
-	}
-}
-</p>
+<p>{{ page.date | date_to_string }}</p>
