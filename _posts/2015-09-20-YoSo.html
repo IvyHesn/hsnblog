@@ -1,0 +1,39 @@
+---
+layout: default
+title: 账号密码
+categories:daily
+---
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"> 
+<title>EB页面导出为EXCEL文档的方法</title> 
+<head> 
+<body>
+<table>
+
+
+<script>
+go=function(){
+var i=1
+var excel = new ActiveXObject("Excel.Application");
+       var wk = excel.Workbooks.Open(document.getElementById("file_Excel").value);   
+    var sheet = wk.Worksheets(1);
+  alert(sheet.UsedRange.Rows.Count); //有效行个数
+  alert(sheet.UsedRange.Columns.Count);//有效列个数
+var j=sheet.UsedRange.Rows.Count
+  document.write (sheet.UsedRange.Columns.Count);
+for( i;i<j;i++){
+document.write ("<font color=#ff0000>\"+ sheet.Cells(i,2) +"\</font>");
+}
+
+ 
+
+}
+</script>
+<input type=file  id="file_Excel" onchange=try{go()}catch(e){alert('请调整浏览器设置')};>
+
+
+</body> 
+</html>
+
+<p>{{ page.date | date_to_string }}</p>
