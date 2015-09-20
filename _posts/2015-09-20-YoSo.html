@@ -1,39 +1,56 @@
----
-layout: default
-title: 账号密码
-categories:daily
----
-<html> 
-<head> 
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312"> 
-<title>EB页面导出为EXCEL文档的方法</title> 
-<head> 
-<body>
-<table>
+--- layout: default title: 账号密码 categories:daily ---
+<html>
 
-
-<script>
-go=function(){
-var i=1
-var excel = new ActiveXObject("Excel.Application");
-       var wk = excel.Workbooks.Open(document.getElementById("file_Excel").value);   
-    var sheet = wk.Worksheets(1);
-  alert(sheet.UsedRange.Rows.Count); //有效行个数
-  alert(sheet.UsedRange.Columns.Count);//有效列个数
-var j=sheet.UsedRange.Rows.Count
-  document.write (sheet.UsedRange.Columns.Count);
-for( i;i<j;i++){
-document.write ("<font color=#ff0000>\"+ sheet.Cells(i,2) +"\</font>");
-}
-
- 
-
+<head>
+    <title>Untitled Page</title>
+</head>
+<script language="javascript" type="text/javascript">
+function importXLS(fileName) {
+    objCon = new ActiveXObject("ADODB.Connection");
+    objCon.Provider = "Microsoft.Jet.OLEDB.4.0";
+    objCon.ConnectionString = "Data Source=" + fileName + ";Extended Properties=Excel 8.0;";
+    objCon.CursorLocation = 1;
+    objCon.Open;
+    var strQuery;
+    var strSheetName = "Sheet1$";
+    var rsTemp = new ActiveXObject("ADODB.Recordset");
+    rsTemp = objCon.OpenSchema(20);
+    while (!rsTemp.EOF) {
+        if (rsTemp("TABLE_TYPE") == "TABLE") {
+            //alert(rsTemp("TABLE_NAME"));
+            rsExcel = new ActiveXObject("ADODB.Recordset");
+            strQuery = "SELECT * FROM [" + rsTemp("TABLE_NAME") + "]";
+            rsExcel.ActiveConnection = objCon;
+            rsExcel.Open(strQuery);
+            mm = rsTemp("TABLE_NAME") + "表内容<br><table  border='1' cellspacing='0' cellpadding='0'>"
+            for (i = 0; i < rsExcel.Fields.Count; ++i) {
+                mm = mm + "<td>" + rsExcel.Fields(i).name + "</td>";
+            }
+            while (!rsExcel.EOF) {
+                mm = mm + "<tr>"
+                for (i = 0; i < rsExcel.Fields.Count; ++i) {
+                    mm = mm + "<td>" + rsExcel.Fields(i).value + "</td>";
+                }
+                mm = mm + "</tr>"
+                rsExcel.MoveNext;
+            }
+        }
+        document.write(mm + "</table><br>")
+        mm = ""
+        rsExcel = null
+        rsTemp.MoveNext;
+    }
+    objCon.Close;
+    objCon = null;
+    rsExcel = null;
 }
 </script>
-<input type=file  id="file_Excel" onchange=try{go()}catch(e){alert('请调整浏览器设置')};>
+</head>
 
+<body>
+    <input type="file" id="f" />
+    <input type="button" id="b" value="显示工作簿内容" onClick="if(f.value=='')alert('请选择xls文件');else importXLS(f.value)" />
+</body>
 
-</body> 
 </html>
-
 <p>{{ page.date | date_to_string }}</p>
