@@ -1,0 +1,23 @@
+.content {
+
+    background-color: #EEEEEE;
+}
+
+.sidebar {
+    height: 100%;
+    width:100%;
+    background-color: rgb(28, 78, 99);
+    padding: 10px;
+    position: fixed;
+}
+
+.list1 {
+    color: rgb(255, 255, 255);
+    font-size: 20pt;
+}
+
+.list2 {
+    color: rgb(255, 255, 255);
+    font-size: 16pt;
+    text-indent: 1em;
+}

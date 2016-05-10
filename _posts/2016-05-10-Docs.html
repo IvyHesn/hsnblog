@@ -1,0 +1,25 @@
+---
+layout: default
+title: YoSo
+categories:daily
+---
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>中文文档-目录</title>
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="catalog.css">
+</head>
+<frameset rows="40,*" frameborder="0">
+    <frame src="head.html" name="head"></frame>
+    <frameset cols="200,*" frameborder="0">
+        <frame id="frame_catalog" name="catalog" src="Docs/catalog.html" noresize="noresize"></frame>
+        <frame id="frame_content" name="content" src="Docs/content.html" noresize="noresize"></frame>
+    </frameset>
+</frameset>
+<script type="text/javascript" src="global.js">
+</script>
+<script type="text/javascript" src="catalog.js">
+</script>
+
+
+<p>{{ page.date | date_to_string }}</p>

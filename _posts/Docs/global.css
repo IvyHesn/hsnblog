@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    background: rgb(240, 240, 160);
+}
+
+.header {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(19, 63, 82);
+    position: fixed;
+}
+
+.header_text {
+    color: rgb(255, 255, 255);
+}
